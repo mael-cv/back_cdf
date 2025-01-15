@@ -18,6 +18,8 @@
                     include('api/auth.php');
                 }else if ($_GET['api'] == 'add'){
                     include('api/add.php');
+                }else if ($_GET['api'] == 'login'){
+                    include('api/login.php');
                 }else {
                     $res = array(
                         'out' => false,
